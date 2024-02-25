@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Zadanie 39</title>
+    <meta charset="utf-8">
+</head>
+
+<style>
+    body {
+        color: green;
+        font-size: 44px;
+    }
+
+    #menu {
+        color: red
+    }
+</style>
+
+<body>
+    <div id="name"></div>
+    <div id="menu">
+        -----MENU-----<br>
+        3: Wyświetlenie teorii o operatorach
+    </div>
+</body>
+
+<script lang="JavaScript">
+    var imie = prompt("Podaj imie", "Sigma");
+    var nazwisko = prompt("Podaj nazwisko", "Bateman");
+
+    var licz1 = imie.length;
+    var licz2 = licz1 + 7;
+    var licz3 = nazwisko.length;
+    var licz4 = licz3 + 4;
+
+    var numbs = document.getElementById("name")
+
+    numbs.innerHTML = imie + " " + nazwisko + "<br>"
+    numbs.innerHTML += `liczba1 = ${licz1}<br>`
+    numbs.innerHTML += `liczba2 = ${licz2}<br>`
+    numbs.innerHTML += `liczba3 = ${licz3}<br>`
+    numbs.innerHTML += `liczba4 = ${licz4}<br>`
+
+    var menu = document.getElementById("menu")
+
+
+
+</script>
+
+</html>

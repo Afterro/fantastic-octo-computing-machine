@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Zadanie 36</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="font-size:25px;">
+
+        <h1 style="color:green">MENU</h1><br>
+
+        <p style="color:red;">1: Czerwony</p>
+        <p style="color:blue;">2: Niebieski</p>
+
+        <input id="col" type="text" />
+        <input type="button" name="szymichowski" value="Sprawdź" onclick="fun_szy()" />
+
+        <div id="output"></div>
+
+        <script>
+            function fun_szy() {
+                var x_szy = document.getElementById("col").value;
+                if (x_szy == 1 || x_szy.toLowerCase() == "czerwony") {
+                    document.getElementById("output").innerHTML = '<h1 style="color:red;">wczytałeś kolor czerwony</h1>';
+                }
+                else if (x_szy == 2 || x_szy.toLowerCase() == "niebieski") {
+                    document.getElementById("output").innerHTML = '<h1 style="color:blue;">wczytałeś kolor niebieski</h1>';
+                }
+            }
+        </script>
+
+
+    </div>
+
+</body>
+
+</html>

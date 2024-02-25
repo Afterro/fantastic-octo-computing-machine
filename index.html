@@ -1,0 +1,70 @@
+<html>
+
+<script lang="JavaScript">
+    function open_site(number, wiosna = false) {
+        if (wiosna) {
+            var w = "w";
+        } else { var w = ""; }
+        window.open(`./zadania/zad_${number}${w}.html`, '_blank', 'location=yes');
+    }
+</script>
+
+<style>
+    body {
+        background-color: #121212;
+    }
+
+    div {
+        text-align: center;
+
+    }
+
+    button {
+
+        font-weight: 400;
+        font-family: Tahoma;
+        font-size: 15px;
+        color: white;
+        padding: 0;
+        background: none;
+        background-color: #252525;
+
+        border: 0px solid #454545;
+        border-radius: 25px;
+
+        width: 250px;
+        height: 50px;
+        margin-bottom: 5px;
+        transition: all .25s ease;
+    }
+
+    button:hover {
+        width: 275px;
+        font-size: 17px;
+        color: #4181bd;
+        border-width: 5px;
+        background-color: #303030;
+        font-weight: 500;
+    }
+
+    button:active {
+        transition: all .1s ease-in-out;
+        color: #bd4141;
+        background-color: #454545;
+
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div>
+        <button class="but" onclick="open_site(35)">Zadanie 35</button><br>
+        <button onclick="open_site(36)">Zadanie 36</button><br>
+        <button onclick="open_site(38)">Zadanie 38</button><br>
+        <button onclick="open_site(39)">Zadanie 39</button><br>
+        <button onclick="open_site(38, true)">Zadanie 38 wiosna</button><br>
+        <button onclick="open_site(40, true)">Zadanie 40 wiosna</button><br>
+    </div>
+</body>
+
+</html>
